@@ -1,0 +1,4 @@
+AddDefaultCharset UTF-8
+
+
+ErrorDocument 404 /404.php

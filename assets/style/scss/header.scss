@@ -1,0 +1,99 @@
+header {
+    height: 160px;
+    display: flex;
+    align-items: center;
+}
+
+.header_day-today {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;   
+ 
+    h1 {
+        color: #212529;
+        font-family: "Marck Script", cursive;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 72px;
+        line-height: 90px;
+    }
+}
+
+.header_calendar {
+    margin: 20px 0;
+
+    width: 110px;
+    height: 110px;
+    border-radius: 0px;
+}
+
+.control-panel {
+    align-items: center;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+
+    &_item {
+        cursor: pointer;
+        margin: 0 15px;
+
+        &:first-child {
+            margin-left: 0;
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    .search {
+        display: flex;
+        width: 60px;
+        height: 60px;
+
+        background: url(icons8-search-100.png);
+    }
+    .burger {
+        width: 60px;
+        height: 60px;
+        
+        position: relative;
+
+        &-line {
+            background-color: black;
+            border-radius: 5px;
+            
+            height: 5px;
+            width: 100%;
+
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+
+            &::after,
+            &::before {
+                content: "";
+                background-color: black;
+                border-radius: 5px;
+                
+                height: 5px;
+                width: 100%;
+    
+                position: absolute;
+            }
+
+            &::before {
+                top: -18px;
+            }
+
+            &::after {
+                bottom: -18px;
+            }
+        }
+    }
+}

@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand", sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.cal {
+    color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.calendar {
+    width: 45rem;
+    height: 52rem;
+    background-color: #222227;
+    box-shadow: 0 0.5rem 3rem rgba(0, 0, 0, 0.4);
+}
+
+.active {
+    background-color: rgb(250, 152, 152);
+}
+
+.month {
+    width: 100%;
+    height: 12rem;
+    background-color: #be3535;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    text-align: center;
+    text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
+}
+
+.month i {
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+
+.month h1 {
+    margin-top: 1rem;
+    font-size: 3rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    margin-bottom: 1rem;
+}
+
+.month p {
+    font-size: 1.6rem;
+}
+
+.weekdays {
+    width: 100%;
+    height: 5rem;
+    padding: 0 0.4rem;
+    display: flex;
+    align-items: center;
+}
+
+.weekdays div {
+    font-size: 1.5rem;
+    font-weight: 400;
+    letter-spacing: 0.1rem;
+    width: calc(44.2rem / 7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
+}
+
+.days {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0.2rem;
+}
+
+.days div {
+    font-size: 1.4rem;
+    margin: 0.3rem;
+    width: calc(40.2rem / 7);
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
+    transition: background-color 0.2s;
+}
+
+.month i {
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+
+.fa,
+.fas {
+    font-weight: 900;
+}
+
+.fa,
+.far,
+.fas {
+    font-family: "Font Awesome 5 Free";
+}
+
+.fa,
+.fab,
+.fad,
+.fal,
+.far,
+.fas {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+}
+
+.fa-angle-left:before {
+    content: "\f104";
+}
+
+.fa-angle-right:before {
+    content: "\f105";
+}
+
+.days div:hover:not(.today) {
+    border: 0.2rem solid #777;
+    cursor: pointer;
+}
+
+.prev-date,
+.next-date {
+    opacity: 0.5;
+}
+
+.today {
+    background-color: #be3535;
+}
+
+.event-calendar {
+    text-decoration: none !important;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.date-event {
+    justify-content: center;
+    width: 160px;
+    background: linear-gradient(180deg, #A70A0A 0%, #D23333 100%);
+    border: 2px solid #A70A0A;
+    box-sizing: border-box;
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.5);
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.description-event {
+    padding: 15px;
+    width: 730px;
+    background: #FFFFFF;
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.5);
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 25px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+}

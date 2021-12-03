@@ -1,0 +1,12 @@
+{
+    "name": "grand/thisday.com",
+    "authors": [
+        {
+            "name": "Grand mirende",
+            "email": "grand@example.com"
+        }
+    ],
+    "require": {
+        "phpoffice/phpspreadsheet": "^1.14"
+    }
+}

@@ -1,0 +1,81 @@
+header {
+  height: 160px;
+  display: flex;
+  align-items: center;
+}
+
+.header_day-today {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  user-select: none;
+}
+.header_day-today h1 {
+  color: #212529;
+  font-family: "Marck Script", cursive;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 72px;
+  line-height: 90px;
+}
+
+.header_calendar {
+  margin: 20px 0;
+  width: 110px;
+  height: 110px;
+  border-radius: 0px;
+}
+
+.control-panel {
+  align-items: center;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.control-panel_item {
+  cursor: pointer;
+  margin: 0 15px;
+}
+.control-panel_item:first-child {
+  margin-left: 0;
+}
+.control-panel_item:last-child {
+  margin-right: 0;
+}
+.control-panel .search {
+  display: flex;
+  width: 60px;
+  height: 60px;
+  background: url(icons8-search-100.png);
+}
+.control-panel .burger {
+  width: 60px;
+  height: 60px;
+  position: relative;
+}
+.control-panel .burger-line {
+  background-color: black;
+  border-radius: 5px;
+  height: 5px;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.control-panel .burger-line::after, .control-panel .burger-line::before {
+  content: "";
+  background-color: black;
+  border-radius: 5px;
+  height: 5px;
+  width: 100%;
+  position: absolute;
+}
+.control-panel .burger-line::before {
+  top: -18px;
+}
+.control-panel .burger-line::after {
+  bottom: -18px;
+}
